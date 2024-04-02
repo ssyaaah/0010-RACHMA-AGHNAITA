@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Kepulangan</title>
+    <style>
+        /* CSS untuk styling form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #616edb;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #2363da;
+            color: black;
+        }
+        .outer-container {
+            padding: 170px;
+            background-color: #304ce7; /* Warna biru muda */
+            display: flex;
+            justify-content: center;
+            width: 100%; /* Memastikan container mengambil seluruh lebar layar */
+            box-sizing: border-box; /* Mencegah container terlalu lebar karena padding */
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form {
+            width: 100%;
+            padding: 20px;
+            background-color: #26cfc7; /* Warna latar belakang form */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(24, 51, 124, 0.1); /* Efek bayangan untuk tampilan 3D */
+        }
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #2a0fc4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ddd;
+            color: rgb(32, 47, 253);
+        }
+        h2 {
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">SI DOSEN</a>
+        <a href="input-data.html">KEHADIRAN MAHASISWA</a>
+        <a href="tabel.html">TABEL</a>
+        <a href="website.html">WEBSITE</a>
+        <a href="form.html">FORM</a>
+    </nav>
+<div class="outer-container">
+    <div class="form-container">
+        <h2>ABSENSI KEPULANGAN</h2>
+        <form action="#" method="post">
+            <label for="nip">NIP:</label>
+            <input type="text" id="nip" name="nip" required>
+            <label for="nama">Nama Dosen:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="kahadiran">KEHADIRAN PULANG:</label>
+            <select id="kahadiran" name="kehadiran">
+                <option value="Pagi">Pagi</option>
+                <option value="Malam">Malam</option>
+            </select>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

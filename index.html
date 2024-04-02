@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI DOSEN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+           background-color:rgb(58, 89, 224);
+            overflow: hidden;
+        }
+        h2 {
+            text-align: center;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(243, 240, 240);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(56, 58, 196);
+            color:rgb(2, 2, 2);
+        }
+        .outer-container {
+            padding: 170px;
+            background-color: #3426b6; 
+            display: flex;
+            justify-content: center;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form {
+            width: 100%;
+            padding: 20px;
+            background-color: rgb(83, 97, 177); /* Warna latar belakang form */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk tampilan 3D */
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #4e4d4d;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #0f1ff8;
+            color: rgb(250, 246, 249);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(41, 9, 223);
+            color: rgb(110, 132, 228);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">SI DOSEN</a>
+        <a href="input-data.html">KEHADIRAN MAHASISWA</a>
+        <a href="tabel.html">TABEL</a>
+        <a href="website.html">WEBSITE</a>
+        <a href="form.html">FORM</a>
+    </nav>
+    
+
+<div class="outer-container">
+    <div class="form-container">
+        <h2>SI DOSEN </h2>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="katasandi">Kata Sandi:</label>
+            <input type="password" id="katasandi" name="katasandi" required>
+            <p>65:52</p>
+            <label for="angka">masukkan angka diatas:</label>
+            <input type="text" id="angka" name="angka" required>
+            <input type="submit" value="Log in">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

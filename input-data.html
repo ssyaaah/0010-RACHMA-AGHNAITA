@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kehadiran Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #2f40a1;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #1f33e2;
+            color: black;
+        }
+    
+        .outer-container {
+            padding: 170px;
+            background-color: #3826be; 
+            display: flex;
+            justify-content: center;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .container {
+            padding: 10px;
+            border-color: aqua;
+        }
+        /* CSS untuk styling halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+            nav {
+           background-color:rgb(59, 93, 248);
+            overflow: hidden;
+        }
+        }
+        .container {
+            padding: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form select {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #1c18f3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0c60fa;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">SI DOSEN</a>
+        <a href="input-data.html">KEHADIRAN MAHASISWA</a>
+        <a href="tabel.html">TABEL</a>
+        <a href="website.html">WEBSITE</a>
+        <a href="form.html">FORM</a>
+    </nav>
+
+<div class="container">
+    <h2>Data Kehadiran Mahasiswa</h2>
+    <form>
+        <label for="kehadiran">Kehadiran Mahasiswa:</label>
+        <input type="text" id="kehadiran" name="kehadiran">
+        <label for="kelas">Kelas:</label>
+        <input type="text" id="kelas" name="kelas">
+        
+        <label for="progdi">Program Studi:</label>
+        <select id="progdi" name="progdi">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Komputerisasi Akuntansi">Komputerisasi Akuntansi</option>
+            <option value="Manajemen Informatika">Manajemen Informatika</option>
+        </select>
+        <button type="submit">Simpan</button>
+    </form>
+</div>
+
+</body>
+</html>
